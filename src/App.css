@@ -1,0 +1,168 @@
+/* App.css */
+
+/* Import Font Awesome */
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+  line-height: 1.6; /* Improve readability */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #d3d3d3; /* Light grey background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+.container {
+  max-width: 1200px; /* Limit the width of the container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add padding */
+  background-color: #fff; /* White background for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 2px solid rgb(192, 191, 191); /* Add a border color */
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333; /* Dark background color for navbar */
+  padding: 15px; /* Padding for navbar */
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove padding */
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
+}
+
+nav li {
+  margin: 0 15px; /* Space between items */
+}
+
+nav a {
+  color: black; /* Black text color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  color: black; /* Gray on hover */
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between cards */
+}
+
+/* Headings */
+h1, h2, h3 {
+  color:black; /* White text color for headings */
+  margin-bottom: 10px; /* Space below headings */
+  padding: 10px; /* Padding around headings */
+  border-radius: 5px; /* Rounded corners for headings */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for main title */
+  background-color: rgb(192, 191, 191); /* Blue background for main title */
+}
+
+h2 {
+  font-size: 2em; /* Medium font size for section titles */
+  background-color:rgb(192, 191, 191); /* Green background for section titles */
+}
+
+h3 {
+  font-size: 1.5em; /* Smaller font size for subheadings */
+  background-color: rgb(192, 191, 191); /* Yellow background for subheadings */
+}
+
+/* Additional Styles for Better Readability */
+h1, h2, h3 {
+  text-align: center; /* Center align headings */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Links */
+a {
+  color: #333; /* Dark color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: #555; /* Darker gray on hover */
+}
+
+/* Lists */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove padding */
+}
+
+li {
+  background-color: #f4f4f4; /* Light gray background for list items */
+  margin: 5px 0; /* Space between list items */
+  padding: 5px; /* Reduced padding inside list items */
+  border-radius: 5px; /* Rounded corners for list items */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-size: 0.9em; /* Smaller font size for list items */
+}
+
+li:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #333; /* Dark button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #555; /* Lighter gray on hover */
+  transform: scale(1.1); /* Scale up slightly */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust heading size */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.2em; /* Adjust heading size */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+  }
+
+  nav li {
+    margin: 10px 0; /* Space between items */
+  }
+}
